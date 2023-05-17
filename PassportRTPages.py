@@ -62,7 +62,9 @@ class AuthHelper(BasePage):
         
     def register_button(self) -> None:
         """ Поиск и нажатие на кнопку 'Регистрация' """
-        return self.find_element(PassportRTLocators.LOCATOR_RT_REGISTER_BUTTON, time=5).click()
+        return self.find_element(
+            PassportRTLocators.LOCATOR_RT_REGISTER_BUTTON, time=5
+        ).click()
    
     def enter_word_first_name(self, word: str) -> object:
         """ Поиск и ввод тестовых данных в поле 'Имя' """
@@ -93,7 +95,9 @@ class AuthHelper(BasePage):
         return password_confirim_field
     
     def get_text_for_register_confirim(self) -> str:
-        return self.find_element(PassportRTLocators.LOCATOR_RT_REGISTER_CONFIRIM, time=5).text
+        return self.find_element(
+            PassportRTLocators.LOCATOR_RT_REGISTER_CONFIRIM, time=5
+        ).text
     
     def register_submit(self) -> None:
         """ Поиск кнопки 'Зарегистрироваться' и нажатие на нее """ 
