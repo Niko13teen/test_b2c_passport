@@ -9,8 +9,8 @@ LITERAL_FAKE_DATA = {
     "negative_user_password": "Qwerty123!",                   
     "positive_user_email": "sergey.devops.link@gmail.com",    
     "negative_user_email": "sergeydevops@gmail.com",          
-    "positive_user_first_name_for_register": "ТестовыйСлучай",             # 14 characters for equivalence classes (middle)
-    "positive_user_last_name_for_register": "ТестовыйСлучай",              # 14 characters for equivalence classes (middle)
+    "positive_user_first_name_for_register": "Тестовыйслучай",             # 14 characters for equivalence classes (middle)
+    "positive_user_last_name_for_register": "Тестовыйслучай",              # 14 characters for equivalence classes (middle)
     "positive_user_email_address_for_register": "testuser@fakemail.com",   
     "positive_user_password_for_register": "P4s6w0rd",                     # 8 characters
     "positive_user_password_for_register_confirim": "P4s6w0rd",            # 8 characters
