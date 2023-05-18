@@ -10,6 +10,9 @@
 Выявлено доказанных дефектов: 0 <br>
 Выявлено потенциально возможных дефектов: 3 </p>
 <br>
+<h4> Тестовая документация: </h4>
+<p> Documentation/TestSuites.odt - наборы тест-кейсов <br>
+<br>
 <pre><code>$pip3 install -r requirements.txt </code>
 <code>$cd tests </code>
 <code>$pytest -v tests.py </code>
