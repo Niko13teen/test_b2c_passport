@@ -4,4 +4,6 @@
 <h4> Среда тестирования: Windows 10, Google Chrome </h4>
 <h4> Запуск тестов: </h4>
 <pre><code>$pip3 install -r requirements.txt </code>
-<code>$pytest -v tests.py </code></pre>
+<code>$cd tests </code>
+<code>$pytest -v tests.py </code>
+</pre>
