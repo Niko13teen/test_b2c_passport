@@ -20,7 +20,7 @@
 <p> 3. Установка зависимостей из файла requirements.txt </p>
 <br>
 <h4> Запуск тестов: </h4>
-<pre><code>$pip3 install -r requirements.txt </code>
-<code>$cd tests </code>
-<code>$pytest -v tests.py </code>
+<pre><code> pip3 install -r requirements.txt </code>
+<code> cd tests </code>
+<code> pytest -v tests.py </code>
 </pre>
