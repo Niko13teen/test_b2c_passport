@@ -1,7 +1,7 @@
 <div align="center"> <h1> Тестирование сервиса "Ростелеком ID" </h1></div>
 <h4> Обьект тестирования: https://b2c.passport.rt.ru </h4>
 <h4> Инструменты тестирования: Selenium WebDriver, Pytest </h4>
-<h4> Среда тестирования: Windows 10 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/windows8/windows8-original.svg" title="WN" **alt="WN" width="15" height="15"/>, Google Chrome <img src="https://www.svgrepo.com/show/380996/google-chrome-logo-new.svg" title="GO" **alt="GO" width="15" height="15"/></h4>
+<h4> Среда тестирования: Windows 10 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/windows8/windows8-original.svg" title="WN" **alt="WN" width="15" height="15"/>, Google Chrome <img src="https://www.svgrepo.com/show/380996/google-chrome-logo-new.svg" title="GO" **alt="GO" width="20" height="20"/></h4>
 <br>
 <h4> Отчёт о результатах тестирования: </h4>
 <p> Протестированы компоненты: Авторизация, Регистрация. <br>
