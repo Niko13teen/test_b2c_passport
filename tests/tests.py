@@ -57,6 +57,7 @@ def test_positive_registration_for_phone_number(browser: object) -> None:
     passport_main_page.register_back_step()
 
 def test_negative_registration_more_first_name_char(browser: object) -> None:
+    """ Регистрация с именем состоящим из 31 символа """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
@@ -70,6 +71,7 @@ def test_negative_registration_more_first_name_char(browser: object) -> None:
     assert warning == 'Необходимо заполнить поле кириллицей. От 2 до 30 символов.'
 
 def test_negative_registration_more_last_name_char(browser: object) -> None:
+    """ Регистрация с фамилией состоящей из 31 символа """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
@@ -83,6 +85,7 @@ def test_negative_registration_more_last_name_char(browser: object) -> None:
     assert warning == 'Необходимо заполнить поле кириллицей. От 2 до 30 символов.'
 
 def test_negative_registration_incorrected_email_address(browser: object) -> None:
+    """ Регистрация с некорректным email """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
@@ -96,6 +99,7 @@ def test_negative_registration_incorrected_email_address(browser: object) -> Non
     assert warning == 'Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru'
 
 def test_negative_registration_incorrected_phone_number(browser: object) -> None:
+    """ Регистрация с неккоректным номером телефона """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
@@ -109,6 +113,7 @@ def test_negative_registration_incorrected_phone_number(browser: object) -> None
     assert warning == 'Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru'
 
 def test_negative_registration_few_password_characters(browser: object) -> None:
+    """ Регистрация с паролем состоящим из 7 символов """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
@@ -122,6 +127,7 @@ def test_negative_registration_few_password_characters(browser: object) -> None:
     assert warning == 'Длина пароля должна быть не менее 8 символов'
 
 def test_negative_registration_password_doesnt_match(browser: object) -> None:
+    """ Регистрация с ошибочным повтором пароля """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
@@ -135,6 +141,7 @@ def test_negative_registration_password_doesnt_match(browser: object) -> None:
     assert warning == 'Пароли не совпадают'
 
 def test_negative_registration_password_no_upper(browser: object) -> None:
+    """ Регистрация с паролем без заглавных букв """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
@@ -148,6 +155,7 @@ def test_negative_registration_password_no_upper(browser: object) -> None:
     assert warning == 'Пароль должен содержать хотя бы одну заглавную букву'
 
 def test_negative_registration_password_no_latin(browser: object) -> None:
+    """ Регистрация с паролем без латинских букв """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
