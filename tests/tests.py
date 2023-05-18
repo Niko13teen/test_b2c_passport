@@ -42,6 +42,7 @@ def test_positive_registration_for_email_address(browser: object) -> None:
     passport_main_page.register_back_step()
 
 def test_positive_registration_for_phone_number(browser: object) -> None:
+    """ Регистрация с корректным номером телефона """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
