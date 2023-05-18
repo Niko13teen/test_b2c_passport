@@ -27,6 +27,7 @@ def test_positive_auth_for_email_and_password(browser: object) -> None:
     passport_main_page.logout_button()
 
 def test_positive_registration_for_email_address(browser: object) -> None:
+    """ Регистрация с корректным email """
     passport_main_page = AuthHelper(browser)
     passport_main_page.return_site()
     passport_main_page.register_button()
