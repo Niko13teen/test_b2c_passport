@@ -14,6 +14,12 @@
 <h4> Тестовая документация: </h4>
 <p> Documentation/TestSuites.odt - наборы тест-кейсов <br>
 <br>
+<h4> Требования к запуску автоматизированных тестов: </h4>
+<p> 1. Предустановленный Google Chrome </p>
+<p> 2. Предустановленный Python не ниже версиии 3.9 </p>
+<p> 3. Установка зависимостей из файла requirements.txt </p>
+<br>
+<h4> Запуск тестов: </h4>
 <pre><code>$pip3 install -r requirements.txt </code>
 <code>$cd tests </code>
 <code>$pytest -v tests.py </code>
