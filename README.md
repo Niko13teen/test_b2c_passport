@@ -12,7 +12,8 @@
 Выявлено потенциально возможных дефектов: 3 </p>
 <br>
 <h4> Тестовая документация: </h4>
-<p> Documentation/TestSuites.odt - наборы тест-кейсов <br>
+<p> Documentation/TestSuites.ods - наборы тест-кейсов <br>
+ <p> Documentation/BugReport.ods - потенциально возможные дефекты <br>
 <br>
 <h4> Требования к запуску автоматизированных тестов: </h4>
 <p> 1. Предустановленный Google Chrome </p>
